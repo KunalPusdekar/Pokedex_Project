@@ -48,16 +48,16 @@ function PokemonList(){
     useEffect(()=>{
        downloadPokemons();
     },[pokedexUrl]); 
-     // if the array is 
+     //if the array is 
      //             1)empty => not executed for any rendering of components
      //             2)one element =>execute for that perticular element rendering
      //             3)not define the array =>execute for all rendering
     
     return (
         <div className='pokemon-list-wrapper'>
-           <div class="pokemon-wrapper">
+           <div className="pokemon-wrapper">
            {(isLoading)?'Loading...':
-               pokemonList.map((p)=> <Pokemon name={p.name} image={p.image} key={p.id}/>)
+               pokemonList.map((p)=> <Pokemon name={p.name} image={p.image} id={p.id} key={p.id}/>)
             }
            </div>
            <div className='controls'>
