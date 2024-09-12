@@ -9,8 +9,17 @@
 }
 
 .pokemon-name{
+    color: black;
     font-size:larger ;
     letter-spacing:0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    
 }
 
 .pokemon-image{
